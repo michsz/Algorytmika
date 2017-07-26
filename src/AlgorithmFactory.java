@@ -18,6 +18,16 @@ public class AlgorithmFactory {
                 return new SumaLiczbWejsciowych();
             case "rokprzestepny":
                 return new RokPrzestepny();
+            case "silnia":
+                return new Silnia();
+            case "sumarekurencja":
+                return new SumaRegurencja();
+            case "wyznaczanie":
+                return new Wyznaczanie();
+            case "fibonacci":
+                return new Fibonacci();
+            case "szyfrcezara":
+                return new SzyfrCezara();
             default:
                 throw new Exception("Nie ma takiego algorytmu!");
         }
