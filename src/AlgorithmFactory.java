@@ -34,6 +34,12 @@ public class AlgorithmFactory {
                 return new Palindrome();
             case "sortowaniewzgledempunktu":
                 return new SortowanieWzgledemPuntu();
+            case "sortowanieprzezzliczanie":
+                return new SortowaniePrzezZliczanie();
+            case "krzyzowka":
+                return new Krzyzowka();
+            case "dzialkajasia":
+                return new DzialkaJasia();
             default:
                 throw new Exception("Nie ma takiego algorytmu!");
         }

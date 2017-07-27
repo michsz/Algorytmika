@@ -52,7 +52,7 @@ public class SortowanieWzgledemPuntu extends AbstractAlgorithm {
             }
         }
 
-        
+
 
 
 
