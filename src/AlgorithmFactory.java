@@ -40,6 +40,14 @@ public class AlgorithmFactory {
                 return new Krzyzowka();
             case "dzialkajasia":
                 return new DzialkaJasia();
+            case "wielkanoc":
+                return new Wielkanoc();
+            case "nwd":
+                return new NajwiekszyWspolnyDzielnik();
+            case "random":
+                return new mRand();
+            case "tableminmax":
+                return new TableMinMax();
             default:
                 throw new Exception("Nie ma takiego algorytmu!");
         }
