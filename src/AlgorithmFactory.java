@@ -1,5 +1,6 @@
 import Algorithms.*;
 
+
 /**
  * Created by jake on 21.07.2017.
  */
@@ -48,6 +49,8 @@ public class AlgorithmFactory {
                 return new mRand();
             case "tableminmax":
                 return new TableMinMax();
+            case "testlist":
+                return new Listy();
             default:
                 throw new Exception("Nie ma takiego algorytmu!");
         }
