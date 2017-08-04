@@ -51,6 +51,12 @@ public class AlgorithmFactory {
                 return new TableMinMax();
             case "testlist":
                 return new Listy();
+            case "drzewa":
+                return new Drzewa();
+            case "powtorka":
+                return new Powtorka();
+            case "powtorka2":
+                return new Powtorka2();
             default:
                 throw new Exception("Nie ma takiego algorytmu!");
         }
