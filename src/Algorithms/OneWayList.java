@@ -35,10 +35,51 @@ public class OneWayList {
 
 
     public void addElementAfter (int newElement, int elementAfter){
+        OneWayListElement after = getElementForward(elementAfter);
+
         OneWayListElement p = new OneWayListElement();
         p.data = newElement;
-        OneWayListElement iterator = new OneWayListElement();
+        p.next = after.next;
+        after.next = p;
+        _counter++;
 
 
+    }
+
+    public void deleteElement (int elementToDelete){
+        OneWayListElement toDelete = getElementForward(elementToDelete);
+
+        if(toDelete == _head){
+            _head = toDelete.next;
+        }
+        OneWayListElement iterator = _head;
+        while (iterator.next != toDelete){
+            iterator = iterator.next;
+        }
+        iterator.next = toDelete.next;
+        toDelete = null;
+
+        _counter--;
+    }
+
+    public OneWayListElement getElementForward(int data){
+        OneWayListElement p = _head;
+
+        while(p.next != null){
+            if(p.data == data){
+                break;
+            }
+            p = p.next;
+        }
+        return p;
+    }
+
+    public void printAllElements(){
+        OneWayListElement p = _head;
+
+        while (p != null){
+            System.out.println(p.data);
+            p = p.next;
+        }
     }
 }

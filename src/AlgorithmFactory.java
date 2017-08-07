@@ -57,6 +57,8 @@ public class AlgorithmFactory {
                 return new Powtorka();
             case "powtorka2":
                 return new Powtorka2();
+            case "lista1":
+                return new OneWayLIstTester();
             default:
                 throw new Exception("Nie ma takiego algorytmu!");
         }

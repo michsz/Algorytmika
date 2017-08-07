@@ -38,7 +38,7 @@ public class Krzyzowka extends AbstractAlgorithm {
 
 
         } else {
-            System.out.println("Wal sie, nie da rady zrobic kwadratu");
+            System.out.println("No can do mate");
         }
 
     }
